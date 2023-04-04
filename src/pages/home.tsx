@@ -1,10 +1,11 @@
 import * as React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
+import SimpleSidebar from "../../Components/Sidenav";
 
-const Home = () => {
-  <Box>
-    <Text>hihih</Text>
-  </Box>;
-};
-
-export default Home;
+export default function HomeScreen() {
+  return (
+    <Box>
+      <SimpleSidebar />
+    </Box>
+  );
+}

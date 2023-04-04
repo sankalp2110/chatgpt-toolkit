@@ -38,7 +38,7 @@ export default function LoginForm() {
 
   const onSubmit = (values: LoginFormInputs) => {
     console.log(values);
-    // router.push("home");
+    router.push("/home");
   };
   return (
     <Flex minH={"100vh"} align={"center"} justify={"center"}>
