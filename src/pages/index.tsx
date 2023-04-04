@@ -29,7 +29,6 @@ export default function LoginForm() {
     handleSubmit,
     formState: { errors },
   } = useForm<LoginFormInputs>({
-    mode: "onBlur",
     resolver: yupResolver(schema),
   });
   const onSubmit = (values: LoginFormInputs) => {
