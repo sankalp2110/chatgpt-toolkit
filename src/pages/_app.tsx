@@ -1,15 +1,9 @@
-import * as React from "react";
-import { Center, Flex, ChakraProvider } from "@chakra-ui/react";
-import LoginForm from "./LoginForm";
-
-function App() {
+import { ChakraProvider } from "@chakra-ui/react";
+function App({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <Center w="100%">
-        <LoginForm />
-      </Center>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
-
 export default App;
